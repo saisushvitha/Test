@@ -1,0 +1,106 @@
+<form action="//submit.form" id="EmploymentApplication100" method="post" onsubmit="return ValidateForm(this);">
+  <script type="text/javascript">
+  function ValidateForm(frm) {
+  if (frm.First_Name.value == "") { alert('First name is required.'); frm.First_Name.focus(); return false; }
+  if (frm.Last_Name.value == "") { alert('Last name is required.'); frm.Last_Name.focus(); return false; }
+  if (frm.Email_Address.value == "") { alert('Email address is required.'); frm.Email_Address.focus(); return false; }
+  if (frm.Email_Address.value.indexOf("@") < 1 || frm.Email_Address.value.indexOf(".") < 1) { alert('Please enter a valid email address.'); frm.Email_Address.focus(); return false; }
+  if (frm.Position.value == "") { alert('Position is required.'); frm.Position.focus(); return false; }
+  if (frm.Phone.value == "") { alert('Phone is required.'); frm.Phone.focus(); return false; }
+  return true; }
+  </script>
+  <table border="0" cellpadding="5" cellspacing="0">
+  <tr> <td style="width: 50%">
+  <label for="First_Name"><b>First name *</b></label><br />
+  <input name="First_Name" type="text" maxlength="50" style="width: 260px" />
+  </td> <td style="width: 50%">
+  <label for="Last_Name"><b>Last name *</b></label><br />
+  <input name="Last_Name" type="text" maxlength="50" style="width: 260px" />
+  </td> </tr> <tr> <td colspan="2">
+  <label for="Email_Address"><b>Email *</b></label><br />
+  <input name="Email_Address" type="text" maxlength="100" style="width: 535px" />
+  </td> </tr> <tr> <td colspan="2">
+  <label for="Primary Location"><b>Primary Location</b></label><br />
+  <input name="Primary Location" type="text" maxlength="255"  style="width: 535px" />
+</td> </tr> <tr> <td colspan="2">
+    <label for="Current Location"><b>Current Location</b></label><br />
+    <input name="Current Location" type="text" maxlength="255" style="width: 535px" />
+  </td> </tr> <tr> <td colspan="2">
+  <label for="Work Start Date"><b>Work Start Date</b></label><br />
+  <input name="Work Start Date" type="date" maxlength="100" style="width: 535px" />
+  </td> </tr> <tr> <td>
+  <label for="Experience"><b>Experience</b></label><br /> 
+    <input name="Experience" type="text" maxlength="50" style="width: 260px" />
+     </td></tr> <tr> <td>
+    <label for="Experience in Monocept"><b>Experience in Monocept</b></label><br /> 
+    <input name="Experience in Monocept" type="text" maxlength="50" style="width: 260px" />
+       </td></tr> <tr> <td>
+   <label for="Joining Date"><b>Joining Date</b></label>
+   <input name="Joining Date" type="date" maxlength="20" style="width: 535px" />
+   <label for="Ending Date"><b>Ending Date</b></label>
+   <input name="Ending Date" type="date" maxlength="20" style="width: 535px" />
+  </td></tr> <tr> <td> 
+      <label for="Designation"><b>Designation</b></label><br /> 
+      <input name="Designation" type="text" maxlength="50" style="width: 260px" />
+         </td></tr> <tr> <td>
+       <label for="Employee status"><b>Employee status</b></label><br /> 
+       <select>
+          <option value=" ">.....</option>
+          <option value="Probation">Probation</option>
+          <option value="Active">Active</option>
+          <option value="Serving Notice">Serving Notice</option>
+          <option value="Resigned">Resigned</option>
+        </select>
+      </td></tr> <tr> <td>
+          <label for="Employee type"><b>Employee type</b></label><br /> 
+          <select>
+             <option value=" ">....</option>
+             <option value="Full-Time">Full-Time</option>
+             <option value="Part-Time">Part-Time</option>
+             <option value="Contract-Internal">Contract-Internal</option>
+             <option value="Contract-External">Contract-External</option>
+           </select>
+         </td></tr> <tr> <td>
+            <label for="Department"><b>Department</b></label><br /> 
+            <select>
+               <option value=" ">....</option>
+               <option value="Development">Development</option>
+               <option value="Testing">Testing</option>
+               <option value="Sales">Sales</option>
+             </select>
+           </td></tr> <tr> <td>
+              <label for="Allocation"><b>Allocation</b></label><br /> 
+              <select>
+                 <option value=" ">....</option>
+                 <option value="Bench">Bench</option>
+                 <option value="Service">Service</option>
+                 <option value="Product">Product</option>
+                 <option value="Presales">Presales</option>
+               </select>
+             </td></tr> <tr> <td>
+                <label for="Project Details"><b>Project Details</b></label><br /> 
+                <select>
+                   <option value=" ">....</option>
+                   <option value="Project Name">Project Name</option>
+                   <option value="Occupancy">Occupancy</option>
+                 </select>
+               </td></tr> <tr> <td>
+                  <label for="Project type"><b>Project type</b></label><br /> 
+                  <select>
+                     <option value=" ">....</option>
+                     <option value="Billable">Billable</option>
+                     <option value="Non-billable">Non-billable</option>
+                     <option value="Tentative">Tentative</option>
+                   </select>
+                 </td></tr> <tr> <td>
+                    <label for="Skill Set"><b>Skill Set</b></label><br /> 
+                    <select>
+                       <option value=" ">....</option>
+                       <option value="Primary Technology">Primary Technology</option>
+                       <option value="Preferred Technology">Preferred Technology</option>
+                       <option value="Current Technology">Current Technology</option>
+                       <option value="Certification">Certification</option>
+                     </select>
+                   </td></tr> <tr> <td>
+                   </table>
+                      <button type="submit"  value="Submit">Submit</button>   

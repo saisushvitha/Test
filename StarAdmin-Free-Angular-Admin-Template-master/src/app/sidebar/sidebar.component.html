@@ -1,0 +1,83 @@
+ <nav class="sidebar sidebar-offcanvas" id="sidebar">
+  <ul class="nav">
+    <!-- <li class="nav-item nav-profile">
+      <div class="nav-link">
+        <div class="user-wrapper">
+          <div class="profile-image">
+            <img src="assets/images/faces/face1.jpg" alt="profile image">
+          </div>
+          <div class="text-wrapper">
+            <p class="profile-name">Richard V.Welsh</p>
+            <div>
+              <small class="designation text-muted">Manager</small>
+              <span class="status-indicator online"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>  -->
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/dashboard" routerLinkActive="active">
+        <i class="menu-icon mdi mdi-television"></i>
+        <span class="menu-title">Dashboard</span>
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/employee" routerLinkActive="active">
+        <i class="menu-icon mdi mdi-notification-clear-all"></i>
+        <span class="menu-title">Employee</span>
+      </a>
+      <ul>
+        <li>
+        <a class="nav-link" routerLink="/employee/addemp" routerLinkActive="active">
+          <i class="menu-icon mdi mdi-notification-clear-all"></i>
+          <span class="menu-title">addition of employee</span>
+        </a>
+      </li>
+      <li>
+        <a class="nav-link" routerLink="/employee/searchemp" routerLinkActive="active">
+          <i class="menu-icon mdi mdi-notification-clear-all"></i>
+          <span class="menu-title">searching of employee</span>
+        </a>
+    </li>
+    </ul>
+    </li>
+
+    <!-- <li  *ngFor="let navitem of navItems"  #mainnav>
+        <div *ngIf="navitem.isActive"> -->
+          <!----<a class="font-size activeparentclass" #navitemRef>{{navitem.displayName}}</a>
+          <ul *ngIf="navitem.routerLink == showNavItem">
+            <li *ngFor="let item of navitem.navigation"><a *ngIf="item.isActive" [routerLink]="item.routerLink"
+                routerLinkActive="active" class="font-size activeclass" id="displayclass">{{item.displayName}}</a></li>
+          </ul>-->
+        <!-- </div> -->
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/project" routerLinkActive="active">
+        <i class="menu-icon mdi mdi-notification-clear-all"></i>
+        <span class="menu-title">Projects</span>
+      </a>
+      <ul>
+          <li>
+        <a class="nav-link" routerLink="/project/addpro" routerLinkActive="active">
+          <i class="menu-icon mdi mdi-notification-clear-all"></i>
+          <span class="menu-title">addition of project</span>
+        </a>
+        </li>
+      <li>
+
+        <a class="nav-link" routerLink="/employee/searchpro" routerLinkActive="active">
+          <i class="menu-icon mdi mdi-notification-clear-all"></i>
+          <span class="menu-title">searching of project</span>
+        </a>
+      </li>
+      </ul>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/client" routerLinkActive="active">
+        <i class="menu-icon mdi mdi-notification-clear-all"></i>
+        <span class="menu-title">Clients</span>
+      </a>
+    </li>
+  </ul>
+</nav>
